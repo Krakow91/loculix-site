@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danke! – Loculix</title>
-    <meta name="description" content="Vielen Dank für dein Interesse an Loculix – dem digitalen Aktenschrank.">
+    <meta name="description" content="Vielen Dank für dein Interesse an Loculix.">
     <meta name="robots" content="noindex">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="canonical" href="https://krakow91.github.io/loculix-site/danke.html">
+    <link rel="alternate" hreflang="de" href="https://krakow91.github.io/loculix-site/danke.html">
+    <link rel="alternate" hreflang="en" href="https://krakow91.github.io/loculix-site/danke-en.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="theme-color" content="#FEFCF6">
-
-    <!-- Fonts & Styles -->
-    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="extra.css">
     <style>
-        .thankyou-main {
+.thankyou-main {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -132,33 +130,25 @@
         .feature-mini .emoji {
             font-size: 1.8rem;
         }
-    </style>
+</style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="index" class="logo">
-            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <defs><linearGradient id="logo-g-danke" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs>
-                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-danke)" stroke-width="0.75" fill="none" opacity="0.7"/>
-                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-danke)" stroke-width="0.4" fill="none" opacity="0.3"/>
-                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-danke)"/>
-                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-danke)"/>
-            </svg>
+        <a href="index.html" class="logo">
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><defs><linearGradient id="lg" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs><circle cx="20" cy="20" r="17.5" stroke="url(#lg)" stroke-width="0.75" fill="none" opacity="0.7"/><circle cx="20" cy="20" r="15.5" stroke="url(#lg)" stroke-width="0.4" fill="none" opacity="0.3"/><rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#lg)"/><rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#lg)"/></svg>
             <div class="logo-wordmark"><span class="logo-name">Loculix</span><div class="logo-rule"></div></div>
         </a>
-        <div style="display: flex; gap: 10px; align-items: center;">
-            <button id="lang-toggle" class="lang-toggle">EN</button>
-            <a href="index" class="nav-btn" data-i18n="nav-back">Zurück</a>
-        </div>
+        
+        <div style="display: flex; gap: 10px; align-items: center;"><a class="lang-toggle" href="danke-en.html" hreflang="en" lang="en">EN</a><a href="index.html" class="nav-btn">Zurück</a></div>
     </nav>
 
-    <!-- Confetti Animation -->
+<!-- Confetti Animation -->
     <div class="confetti" id="confetti"></div>
 
     <main class="thankyou-main">
         <div class="thankyou-icon">🎉</div>
-        <h1 data-i18n="thankyou-title">Du bist dabei!</h1>
-        <p data-i18n="thankyou-desc">
+        <h1>Du bist dabei!</h1>
+        <p>
             Vielen Dank für dein Interesse an Loculix! Wir haben dich auf die Warteliste gesetzt 
             und benachrichtigen dich, sobald die App verfügbar ist.
         </p>
@@ -166,25 +156,25 @@
         <div class="features-teaser">
             <div class="feature-mini">
                 <span class="emoji">📱</span>
-                <span data-i18n="thankyou-feat1">Scannen</span>
+                <span>Scannen</span>
             </div>
             <div class="feature-mini">
                 <span class="emoji">🧠</span>
-                <span data-i18n="thankyou-feat2">KI-Extraktion</span>
+                <span>KI-Extraktion</span>
             </div>
             <div class="feature-mini">
                 <span class="emoji">🔒</span>
-                <span data-i18n="thankyou-feat3">AES-256</span>
+                <span>AES-256</span>
             </div>
         </div>
 
         <div class="thankyou-actions">
-            <a href="index" class="btn btn-primary" data-i18n="thankyou-btn-back">Zurück zur Startseite</a>
-            <a href="kontakt" class="btn btn-secondary" data-i18n="thankyou-btn-contact">Frage stellen</a>
+            <a href="index.html" class="btn btn-primary">Zurück zur Startseite</a>
+            <a href="kontakt.html" class="btn btn-secondary">Frage stellen</a>
         </div>
 
         <div class="social-proof">
-            <p data-i18n="thankyou-social">
+            <p>
                 💡 <strong>Wusstest du?</strong> Loculix verarbeitet alle deine Dokumente komplett lokal auf deinem Gerät – 
                 dank On-Device KI. Deine Daten verlassen nie dein Smartphone.
             </p>
@@ -195,37 +185,17 @@
         <div class="footer-content">
             <div class="footer-logo">Loculix</div>
             <div class="footer-links">
-                <a href="datenschutz" data-i18n="footer-privacy">Datenschutz</a>
-                <a href="app-datenschutz" data-i18n="footer-app-privacy">App-Datenschutz</a>
-                <a href="agb" data-i18n="footer-agb">AGB</a>
-                <a href="nutzungsrichtlinien" data-i18n="footer-tos">Nutzungsrichtlinien</a>
-                <a href="impressum" data-i18n="footer-imprint">Impressum</a>
-                <a href="kontakt" data-i18n="footer-contact">Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="app-datenschutz.html">App-Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="nutzungsrichtlinien.html">Nutzungsrichtlinien</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
-        <p class="footer-copy" data-i18n="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
+        <p class="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
     </footer>
-
-    <script src="i18n.js"></script>
-    <script>
-        // Confetti Animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const confettiContainer = document.getElementById('confetti');
-            const colors = ['#B8960C', '#D4A926', '#5C4033', '#8B6F4E', '#E8DFD0', '#5B8C5A'];
-            
-            for (let i = 0; i < 50; i++) {
-                const piece = document.createElement('div');
-                piece.classList.add('confetti-piece');
-                piece.style.left = Math.random() * 100 + '%';
-                piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                piece.style.width = (Math.random() * 8 + 5) + 'px';
-                piece.style.height = (Math.random() * 8 + 5) + 'px';
-                piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
-                piece.style.animationDelay = (Math.random() * 1.5) + 's';
-                piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-                confettiContainer.appendChild(piece);
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

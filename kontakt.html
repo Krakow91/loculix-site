@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Loculix</title>
-    <meta name="description" content="Schreib uns eine Nachricht – bei Fragen zu Loculix, Feedback oder Support. Wir freuen uns von dir zu hören.">
-    <link rel="stylesheet" href="fonts.css">
+    <title>Kontakt – Loculix</title>
+    <meta name="description" content="Schreib uns eine Nachricht bei Fragen zu Loculix, Feedback oder Support.">
+    
+    <link rel="canonical" href="https://krakow91.github.io/loculix-site/kontakt.html">
+    <link rel="alternate" hreflang="de" href="https://krakow91.github.io/loculix-site/kontakt.html">
+    <link rel="alternate" hreflang="en" href="https://krakow91.github.io/loculix-site/kontakt-en.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#FEFCF6">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="extra.css">
     <style>
-        .legal-main {
+.legal-main {
             padding-top: 140px;
             max-width: 600px;
             min-height: calc(100vh - 80px);
@@ -40,45 +47,32 @@
             font-weight: 500;
             color: var(--text-primary);
         }
-    </style>
+</style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="index" class="logo">
-            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <defs>
-                    <linearGradient id="logo-g-kontakt" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#C8A010"/>
-                        <stop offset="100%" stop-color="#9A7800"/>
-                    </linearGradient>
-                </defs>
-                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-kontakt)" stroke-width="0.75" fill="none" opacity="0.7"/>
-                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-kontakt)" stroke-width="0.4" fill="none" opacity="0.3"/>
-                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-kontakt)"/>
-                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-kontakt)"/>
-            </svg>
-            <div class="logo-wordmark">
-                <span class="logo-name">Loculix</span>
-                <div class="logo-rule"></div>
-            </div>
+        <a href="index.html" class="logo">
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><defs><linearGradient id="lg" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs><circle cx="20" cy="20" r="17.5" stroke="url(#lg)" stroke-width="0.75" fill="none" opacity="0.7"/><circle cx="20" cy="20" r="15.5" stroke="url(#lg)" stroke-width="0.4" fill="none" opacity="0.3"/><rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#lg)"/><rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#lg)"/></svg>
+            <div class="logo-wordmark"><span class="logo-name">Loculix</span><div class="logo-rule"></div></div>
         </a>
-        <div style="display: flex; gap: 10px; align-items: center;">
-            <a href="index" class="nav-btn">Zurück</a>
-        </div>
+        
+        <div style="display: flex; gap: 10px; align-items: center;"><a class="lang-toggle" href="kontakt-en.html" hreflang="en" lang="en">EN</a><a href="index.html" class="nav-btn">Zurück</a></div>
     </nav>
 
-    <main class="section-container legal-main">
-        <h1 class="text-center" data-i18n="contact-title">Kontakt</h1>
-        <p class="text-center" data-i18n="contact-desc">Hast du Fragen zu Loculix oder Feedback zur Beta-Version? Schreib uns gerne eine Nachricht!</p>
+<main class="section-container legal-main">
+        <h1 class="text-center">Kontakt</h1>
+        <p class="text-center">Hast du Fragen zu Loculix oder Feedback zur Beta-Version? Schreib uns gerne eine Nachricht!</p>
 
+        <p class="text-center">Direkt per E-Mail: <a href="mailto:info@loculix.de">info@loculix.de</a></p>
         <form action="https://formsubmit.co/info@loculix.de" method="POST" class="contact-form">
             <input type="hidden" name="_subject" value="Neue Kontaktanfrage für Loculix">
-            <input type="hidden" name="_next" value="https://www.loculix.de/danke">
+            <input type="hidden" name="_next" value="https://krakow91.github.io/loculix-site/danke.html">
             <input type="text" name="_honey" style="display:none"> <!-- Spam-Schutz -->
-            <input type="text" name="name" data-i18n="placeholder-name" placeholder="Dein Name" required>
-            <input type="email" name="email" data-i18n="placeholder-email" placeholder="Deine E-Mail-Adresse" required>
-            <textarea name="message" data-i18n="placeholder-msg" placeholder="Wie können wir dir helfen?" required></textarea>
-            <button type="submit" class="btn btn-gold" data-i18n="contact-btn" style="width: 100%; border-radius: var(--rad-sm);">Nachricht abschicken</button>
+            <input type="text" name="name" placeholder="Dein Name" required>
+            <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+            <textarea name="message" placeholder="Wie können wir dir helfen?" required></textarea>
+            <p style="font-size:.85rem">Mit dem Absenden stimmst du der Verarbeitung deiner Angaben zur Bearbeitung der Anfrage zu. Siehe <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            <button type="submit" class="btn btn-gold" style="width: 100%; border-radius: var(--rad-sm);">Nachricht abschicken</button>
         </form>
     </main>
 
@@ -86,16 +80,17 @@
         <div class="footer-content">
             <div class="footer-logo">Loculix</div>
             <div class="footer-links">
-                <a href="datenschutz" data-i18n="footer-privacy">Datenschutz</a>
-                <a href="app-datenschutz" data-i18n="footer-app-privacy">App-Datenschutz</a>
-                <a href="agb" data-i18n="footer-agb">AGB</a>
-                <a href="nutzungsrichtlinien" data-i18n="footer-tos">Nutzungsrichtlinien</a>
-                <a href="impressum" data-i18n="footer-imprint">Impressum</a>
-                <a href="kontakt" data-i18n="footer-contact">Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="app-datenschutz.html">App-Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="nutzungsrichtlinien.html">Nutzungsrichtlinien</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
-        <p class="footer-copy" data-i18n="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
+        <p class="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
     </footer>
-    <script src="i18n.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -3,54 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - Loculix</title>
+    <title>Datenschutzerklärung – Loculix</title>
     <meta name="description" content="Datenschutzerklärung für die Loculix Webseite und App gemäß DSGVO.">
-    <link rel="stylesheet" href="fonts.css">
+    
+    <link rel="canonical" href="https://krakow91.github.io/loculix-site/datenschutz.html">
+    <link rel="alternate" hreflang="de" href="https://krakow91.github.io/loculix-site/datenschutz.html">
+    <link rel="alternate" hreflang="en" href="https://krakow91.github.io/loculix-site/datenschutz-en.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#FEFCF6">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .legal-main {
-            padding-top: 140px;
-            max-width: 800px;
-            min-height: calc(100vh - 80px);
-        }
-        .legal-main h2 { margin-top: var(--space-xl); font-size: 1.4rem; }
-        .legal-main h3 { margin-top: var(--space-xl); color: var(--text-primary); }
-        .legal-main h4 { margin-top: var(--space-lg); color: var(--text-primary); }
-        .legal-main p, .legal-main li { color: var(--text-secondary); line-height: 1.7; }
-        .legal-main a { color: var(--accent-gold); text-decoration: underline; }
-        .legal-main ul { margin-bottom: var(--space-md); padding-left: 24px; color: var(--text-secondary); }
-        .legal-main table { width: 100%; border-collapse: collapse; margin: var(--space-md) 0; }
-        .legal-main table th, .legal-main table td { border: 1px solid rgba(92, 64, 51, 0.15); padding: 10px 14px; text-align: left; font-size: 0.92rem; color: var(--text-secondary); }
-        .legal-main table th { background: var(--bg-secondary); color: var(--text-primary); font-weight: 600; }
-        .legal-date { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: var(--space-lg); }
-        .toc { background: var(--bg-secondary); border-radius: var(--rad-md); padding: var(--space-lg); margin-bottom: var(--space-xl); }
-        .toc h4 { margin-top: 0; }
-        .toc ol { padding-left: 20px; }
-        .toc li { margin-bottom: 6px; }
-        .toc a { color: var(--text-primary); text-decoration: none; font-size: 0.95rem; }
-        .toc a:hover { color: var(--accent-gold); }
-    </style>
+    
+    <link rel="stylesheet" href="extra.css">
+    
 </head>
 <body>
     <nav class="navbar">
-        <a href="index" class="logo">
-            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <defs><linearGradient id="logo-g-ds" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs>
-                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-ds)" stroke-width="0.75" fill="none" opacity="0.7"/>
-                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-ds)" stroke-width="0.4" fill="none" opacity="0.3"/>
-                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-ds)"/>
-                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-ds)"/>
-            </svg>
+        <a href="index.html" class="logo">
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><defs><linearGradient id="lg" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs><circle cx="20" cy="20" r="17.5" stroke="url(#lg)" stroke-width="0.75" fill="none" opacity="0.7"/><circle cx="20" cy="20" r="15.5" stroke="url(#lg)" stroke-width="0.4" fill="none" opacity="0.3"/><rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#lg)"/><rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#lg)"/></svg>
             <div class="logo-wordmark"><span class="logo-name">Loculix</span><div class="logo-rule"></div></div>
         </a>
-        <div style="display: flex; gap: 10px; align-items: center;">
-            <button id="lang-toggle" class="lang-toggle">EN</button>
-            <a href="index" class="nav-btn" data-i18n="nav-back">Zurück</a>
-        </div>
+        
+        <div style="display: flex; gap: 10px; align-items: center;"><a class="lang-toggle" href="datenschutz-en.html" hreflang="en" lang="en">EN</a><a href="index.html" class="nav-btn">Zurück</a></div>
     </nav>
 
-    <main class="section-container legal-main">
-        <h1>Datenschutzerklärung</h1>
+<main class="section-container legal-main">
+<h1>Datenschutzerklärung</h1>
         <p class="legal-date">Stand: April 2026</p>
 
         <!-- Inhaltsverzeichnis -->
@@ -174,20 +151,18 @@
         <!-- 5. Webseite -->
         <h3 id="dse-5">5. Datenverarbeitung auf der Webseite</h3>
 
-        <h4>5.1 Hosting-Provider (IONOS)</h4>
-        <p>Unsere Webseite wird bei der <strong>IONOS SE</strong> (Elgendorfer Str. 57, 56410 Montabaur, Deutschland) gehostet. Beim Besuch unserer Website erfasst IONOS automatisch Informationen in sogenannten Server-Logfiles, die dein Browser automatisch übermittelt:</p>
+        <h4>5.1 Hosting (GitHub Pages)</h4>
+        <p>Unsere Webseite wird über <strong>GitHub Pages</strong> bereitgestellt. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (ein Unternehmen der Microsoft-Gruppe). Beim Aufruf der Webseite verarbeitet GitHub technisch notwendige Verbindungsdaten, die dein Browser automatisch übermittelt, insbesondere:</p>
         <ul>
-            <li>IP-Adresse (wird ggf. anonymisiert)</li>
-            <li>Browsertyp und -version</li>
-            <li>Verwendetes Betriebssystem</li>
+            <li>IP-Adresse</li>
+            <li>Browsertyp und -version, Betriebssystem</li>
             <li>Referrer-URL</li>
-            <li>Hostname des zugreifenden Rechners</li>
-            <li>Uhrzeit der Serveranfrage</li>
+            <li>Datum und Uhrzeit der Anfrage</li>
         </ul>
-        <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Gewährleistung eines störungsfreien Betriebs). Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Daten werden nach Ablauf statistischer Auswertung und spätestens nach 30 Tagen gelöscht.</p>
-        <p>Mit IONOS haben wir einen <strong>Auftragsverarbeitungsvertrag (AVV)</strong> gemäß Art. 28 DSGVO geschlossen. Die Server befinden sich ausschließlich in <strong>Deutschland</strong>.</p>
+        <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren, stabilen und kostengünstigen Bereitstellung der Webseite). Wir selbst haben keinen Zugriff auf diese Server-Logs und führen sie nicht mit anderen Daten zusammen.</p>
+        <p><strong>Drittlandtransfer:</strong> Da GitHub seinen Sitz in den USA hat, können Daten in die USA übermittelt werden. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss zum EU-US Data Privacy Framework (Art. 45 DSGVO) bzw. Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).</p>
         <ul>
-            <li><strong>Datenschutzerklärung von IONOS:</strong> <a href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/" target="_blank" rel="noopener">ionos.de/terms-gtc/datenschutzerklaerung</a></li>
+            <li><strong>Datenschutzerklärung von GitHub:</strong> <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a></li>
         </ul>
 
         <h4>5.2 Kontaktformular und Warteliste</h4>
@@ -201,24 +176,22 @@
         <p><strong>Verarbeitung durch FormSubmit.co:</strong> Die Formulardaten werden über den Dienst FormSubmit.co (Betreiber: Envoke IT S.L., Madrid, Spanien) an unsere E-Mail-Adresse weitergeleitet. FormSubmit verarbeitet die Daten zur Übermittlung und speichert sie temporär. Soweit Daten auf Servern in den USA verarbeitet werden, erfolgt dies auf Grundlage des EU-US Data Privacy Framework (Art. 45 DSGVO) oder hilfsweise Standarddatenschutzklauseln (Art. 46 Abs. 2 lit. c DSGVO). Weitere Informationen: <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener">FormSubmit Datenschutz</a>.</p>
         <p>Die bei der Kontaktaufnahme übermittelten Daten werden gelöscht, sobald deine Anfrage vollständig bearbeitet wurde – es sei denn, eine längere Aufbewahrung ist gesetzlich erforderlich.</p>
 
-        <h4>5.3 Lokale Speicherung (LocalStorage)</h4>
-        <p>Unsere Webseite speichert deine Spracheinstellung (Deutsch/Englisch) im LocalStorage deines Browsers. Hierbei handelt es sich um einen rein technischen Speichermechanismus, der keinerlei personenbezogene Daten enthält und nicht an Dritte übertragen wird.</p>
-        <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung einer nutzerfreundlichen Webseite).</p>
+        <h4>5.3 Lokale Speicherung</h4>
+        <p>Die Webseite setzt keine Cookies und speichert keine Daten im LocalStorage deines Browsers. Die Sprachauswahl erfolgt über getrennte Seiten (Deutsch/Englisch).</p>
 
         <!-- 6. Cookies -->
         <h3 id="dse-6">6. Cookies und Tracking</h3>
         <p>Unsere Webseite <strong>verwendet keine Cookies, keine Tracking-Pixel und keine Analyse-Tools</strong> (wie z. B. Google Analytics, Facebook Pixel o. ä.). Es findet kein Profiling und kein Behavioral Tracking statt.</p>
-        <p>Wir setzen weder Marketing-Cookies noch Retargeting-Maßnahmen ein. Die einzige clientseitige Speicherung ist die unter Punkt 5.3 beschriebene Spracheinstellung im LocalStorage.</p>
+        <p>Wir setzen weder Marketing-Cookies noch Retargeting-Maßnahmen ein. Es werden keine Daten clientseitig im Browser gespeichert.</p>
 
         <!-- 7. Drittanbieter -->
         <h3 id="dse-7">7. Externe Dienstleister und Drittanbieter</h3>
 
-        <h4>7.1 Google Fonts (lokal eingebunden)</h4>
-        <p>Diese Webseite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Web Fonts, die ursprünglich von Google bereitgestellt werden. Die Schriftarten (Inter, Playfair Display) sind <strong>lokal auf unserem eigenen Server (IONOS, Deutschland) gespeichert</strong>. Beim Aufruf unserer Webseite werden die Schriftarten direkt von unserem Server geladen.</p>
-        <p><strong>Es findet keine Verbindung zu Google-Servern statt.</strong> Deine IP-Adresse wird nicht an Google übermittelt. Es werden keine Daten an Drittanbieter weitergegeben.</p>
+        <h4>7.1 Schriftarten</h4>
+        <p>Diese Webseite verwendet ausschließlich Systemschriften deines Geräts. Es werden keine Schriftarten von externen Servern (z. B. Google Fonts) nachgeladen. Es findet keine Verbindung zu Google-Servern statt.</p>
 
-        <h4>7.2 GSAP (GreenSock) – lokal eingebunden</h4>
-        <p>Für Animationen auf der Webseite verwenden wir die JavaScript-Bibliothek GSAP (GreenSock Animation Platform). Die Bibliothek ist <strong>lokal auf unserem eigenen Server (IONOS, Deutschland) gespeichert</strong>. Es findet keine Verbindung zu externen CDN-Servern statt.</p>
+        <h4>7.2 Skripte und Bibliotheken</h4>
+        <p>Die Webseite bindet keine externen Skripte, CDNs oder Tracking-Dienste ein. Alle verwendeten Dateien werden über GitHub Pages ausgeliefert.</p>
 
         <h4>7.3 FormSubmit.co</h4>
         <p>Zur Übermittlung von Kontaktformular- und Wartelisten-Daten nutzen wir den Dienst FormSubmit.co (Betreiber: Envoke IT S.L., Madrid, Spanien). Der Dienst verarbeitet deine Daten in unserem Auftrag, um die Nachrichten an unsere E-Mail-Adresse zuzustellen.</p>
@@ -247,8 +220,8 @@
                 <th>Aufbewahrungsdauer</th>
             </tr>
             <tr>
-                <td>Server-Logfiles</td>
-                <td>Max. 30 Tage</td>
+                <td>Server-Logfiles (GitHub Pages)</td>
+                <td>Gemäß den Richtlinien von GitHub</td>
             </tr>
             <tr>
                 <td>Kontaktanfragen</td>
@@ -296,7 +269,7 @@
         <h3 id="dse-11">12. Datensicherheit</h3>
         <p>Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um deine Daten gegen zufällige oder vorsätzliche Manipulationen, Verlust, Zerstörung oder den Zugriff unberechtigter Personen zu schützen:</p>
         <ul>
-            <li>SSL/TLS-Verschlüsselung der Webseite (HTTPS)</li>
+            <li>TLS-Verschlüsselung der Webseite (HTTPS)</li>
             <li>AES-256-Verschlüsselung aller lokal gespeicherten Dokumenten-Daten in der App</li>
             <li>Ende-zu-Ende-Verschlüsselung bei der optionalen Cloud-Synchronisation</li>
             <li>Regelmäßige Überprüfung der Sicherheitsmaßnahmen</li>
@@ -309,22 +282,23 @@
         <!-- 13. Änderungen -->
         <h3 id="dse-13">14. Änderungen dieser Datenschutzerklärung</h3>
         <p>Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen umzusetzen. Für deinen erneuten Besuch gilt dann die jeweils neue Datenschutzerklärung. Wesentliche Änderungen werden, sofern möglich, durch einen Hinweis auf der Webseite oder in der App kommuniziert.</p>
-    </main>
 
+</main>
     <footer>
         <div class="footer-content">
             <div class="footer-logo">Loculix</div>
             <div class="footer-links">
-                <a href="datenschutz" data-i18n="footer-privacy">Datenschutz</a>
-                <a href="app-datenschutz" data-i18n="footer-app-privacy">App-Datenschutz</a>
-                <a href="agb" data-i18n="footer-agb">AGB</a>
-                <a href="nutzungsrichtlinien" data-i18n="footer-tos">Nutzungsrichtlinien</a>
-                <a href="impressum" data-i18n="footer-imprint">Impressum</a>
-                <a href="kontakt" data-i18n="footer-contact">Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="app-datenschutz.html">App-Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="nutzungsrichtlinien.html">Nutzungsrichtlinien</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
-        <p class="footer-copy" data-i18n="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
+        <p class="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
     </footer>
-    <script src="i18n.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

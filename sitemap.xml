@@ -1,74 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Portfolio Startseite -->
-  <url>
-    <loc>https://www.loculix.de/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Loculix App -->
-  <url>
-    <loc>https://www.loculix.de/loculix/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Mia App -->
-  <url>
-    <loc>https://www.loculix.de/mia/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Games -->
-  <url>
-    <loc>https://www.loculix.de/games/</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Rechtliches -->
-  <url>
-    <loc>https://www.loculix.de/datenschutz.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.loculix.de/app-datenschutz.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.loculix.de/impressum.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.loculix.de/agb.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://www.loculix.de/nutzungsrichtlinien.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://www.loculix.de/kontakt.html</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
+  <url><loc>https://krakow91.github.io/loculix-site/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/index-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/loculix.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/loculix-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/datenschutz.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/datenschutz-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/app-datenschutz.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/app-datenschutz-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/agb.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/impressum.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/nutzungsrichtlinien.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/nutzungsrichtlinien-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/kontakt.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/kontakt-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/support.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/support-en.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://krakow91.github.io/loculix-site/danke-en.html</loc><lastmod>2026-10-29</lastmod></url>
 </urlset>

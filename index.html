@@ -1,88 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willkommen – Loculix Studio</title>
-    <meta name="description"
-        content="Loculix Studio entwickelt durchdachte native Apps: Loculix Dokumentenmanager, Mia KI-Fitness-Coach und mehr. Entwickelt in Köln.">
-
-    <link rel="canonical" href="https://www.loculix.de/">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-
+    <meta name="description" content="Loculix Studio entwickelt durchdachte native Apps: Loculix Dokumentenmanager, Mia KI-Fitness-Coach und mehr.">
+    
+    <link rel="canonical" href="https://krakow91.github.io/loculix-site/">
+    <link rel="alternate" hreflang="de" href="https://krakow91.github.io/loculix-site/index.html">
+    <link rel="alternate" hreflang="en" href="https://krakow91.github.io/loculix-site/index-en.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="theme-color" content="#FEFCF6">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.loculix.de/">
-    <meta property="og:title" content="Loculix Studio – Apps mit Persönlichkeit">
-    <meta property="og:description" content="Durchdachte Apps, die das Leben ein bisschen besser machen.">
-    <meta property="og:image" content="https://www.loculix.de/img/loculix-mockup.png">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="Loculix Studio">
-
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css?v=1.2">
-    <link rel="stylesheet" href="portfolio.css?v=4.0">
-
-    <script src="js/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="extra.css">
+    
 </head>
-
 <body class="portfolio-page">
-
-    <div id="scroll-progress" aria-hidden="true"></div>
-
     <nav class="navbar">
-        <a href="index" class="logo">
-            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <defs>
-                    <linearGradient id="logo-g-home" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#C8A010"/>
-                        <stop offset="100%" stop-color="#9A7800"/>
-                    </linearGradient>
-                </defs>
-                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-home)" stroke-width="0.75" fill="none" opacity="0.7"/>
-                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-home)" stroke-width="0.4" fill="none" opacity="0.3"/>
-                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-home)"/>
-                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-home)"/>
-            </svg>
-            <div class="logo-wordmark">
-                <span class="logo-name">Loculix Studio</span>
-                <div class="logo-rule"></div>
-            </div>
+        <a href="index.html" class="logo">
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true"><defs><linearGradient id="lg" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs><circle cx="20" cy="20" r="17.5" stroke="url(#lg)" stroke-width="0.75" fill="none" opacity="0.7"/><circle cx="20" cy="20" r="15.5" stroke="url(#lg)" stroke-width="0.4" fill="none" opacity="0.3"/><rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#lg)"/><rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#lg)"/></svg>
+            <div class="logo-wordmark"><span class="logo-name">Loculix Studio</span><div class="logo-rule"></div></div>
         </a>
-        <div class="nav-links" id="nav-links">
-            <a href="loculix/index" class="nav-app-link">
-                <img src="img/loculix-icon.png" alt="Loculix" class="nav-app-icon">
-                <span>Loculix</span>
-            </a>
-            <a href="mia/index" class="nav-app-link">
-                <img src="img/mia-icon.png" alt="Mia" class="nav-app-icon">
-                <span>Mia</span>
-            </a>
-            <a href="games/index" class="nav-app-link">
-                <span class="nav-app-icon nav-app-icon--emoji" aria-hidden="true">🎮</span>
-                <span>Games</span>
-            </a>
-            <div class="nav-divider" aria-hidden="true"></div>
-            <a href="#about">Über mich</a>
-            <a href="kontakt">Kontakt</a>
-        </div>
-        <div style="display: flex; gap: 10px; align-items: center;">
-            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+        <div class="nav-links" id="nav-links"><a href="loculix.html">Loculix</a><a href="#about">Über mich</a><a href="kontakt.html">Kontakt</a></div>
+        <div style="display: flex; gap: 10px; align-items: center;"><a class="lang-toggle" href="index-en.html" hreflang="en" lang="en">EN</a><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div>
     </nav>
 
-    <main>
+<main>
         <!-- Hero -->
         <section class="portfolio-hero">
             <div class="portfolio-hero-content">
@@ -122,11 +66,11 @@
                 <div class="apps-grid">
 
                     <!-- Loculix Card -->
-                    <a href="loculix/index" class="app-card app-card--loculix app-card-anim">
+                    <a href="loculix.html" class="app-card app-card--loculix app-card-anim">
                         <div class="app-card-inner">
                             <div class="app-card-header">
                                 <div class="app-icon app-icon--loculix">
-                                    <img src="img/loculix-icon.png" alt="Loculix App Icon">
+                                    <svg class="app-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true"><defs><linearGradient id="lg3" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#C8A010"/><stop offset="100%" stop-color="#9A7800"/></linearGradient></defs><circle cx="20" cy="20" r="17.5" stroke="url(#lg3)" stroke-width="0.75" fill="none" opacity="0.7"/><circle cx="20" cy="20" r="15.5" stroke="url(#lg3)" stroke-width="0.4" fill="none" opacity="0.3"/><rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#lg3)"/><rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#lg3)"/></svg>
                                 </div>
                                 <div class="app-meta">
                                     <span class="app-platform">iOS · Android · macOS · Windows</span>
@@ -151,11 +95,11 @@
                     </a>
 
                     <!-- Mia Card -->
-                    <a href="mia/index" class="app-card app-card--mia app-card-anim">
+                    <div class="app-card app-card--mia app-card-anim">
                         <div class="app-card-inner">
                             <div class="app-card-header">
                                 <div class="app-icon app-icon--mia">
-                                    <img src="img/mia-icon.png" alt="Mia App Icon">
+                                    <span aria-hidden="true" style="font-size:2rem">💪</span>
                                 </div>
                                 <div class="app-meta">
                                     <span class="app-platform">iOS</span>
@@ -169,18 +113,12 @@
                                 <span class="tag">KI-Coach</span>
                                 <span class="tag">Training</span>
                             </div>
-                            <div class="app-card-cta">
-                                Mehr erfahren
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
+                            
                         </div>
                         <div class="app-card-bg" aria-hidden="true"></div>
-                    </a>
-
-                    <!-- Games Card -->
-                    <a href="games/index" class="app-card app-card--games app-card-anim">
+                    </div>
+<!-- Games Card -->
+                    <div class="app-card app-card--games app-card-anim">
                         <div class="app-card-inner">
                             <div class="app-card-header">
                                 <div class="app-icon app-icon--games">
@@ -197,17 +135,11 @@
                                 <span class="tag">Games</span>
                                 <span class="tag">Coming Soon</span>
                             </div>
-                            <div class="app-card-cta">
-                                Neugierig bleiben
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
+                            
                         </div>
                         <div class="app-card-bg" aria-hidden="true"></div>
-                    </a>
-
-                </div>
+                    </div>
+</div>
             </div>
         </section>
 
@@ -220,7 +152,7 @@
                         <h2>Alexander Krakow</h2>
                         <p>Ich bin Indie Developer aus Köln und baue Apps, bei denen Qualität keine Kompromisse kennt. Von der ersten Idee bis zum letzten Pixel denke ich Funktion und Ästhetik gemeinsam – denn gute Software muss beides können.</p>
                         <p>Mein Schwerpunkt liegt auf nativen Plattformen: iOS, macOS, Android und Windows. Keine generischen Lösungen, sondern Produkte, die sich auf ihrer Plattform wirklich zu Hause fühlen.</p>
-                        <a href="kontakt" class="btn btn-primary" style="margin-top: 8px;">Kontakt aufnehmen</a>
+                        <a href="kontakt.html" class="btn btn-primary" style="margin-top: 8px;">Kontakt aufnehmen</a>
                     </div>
                     <div class="about-values gsap-slide-left">
                         <div class="value-item">
@@ -252,132 +184,19 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">Loculix Studio</div>
+            <div class="footer-logo">Loculix</div>
             <div class="footer-links">
-                <a href="datenschutz">Datenschutz</a>
-                <a href="impressum">Impressum</a>
-                <a href="kontakt">Kontakt</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="app-datenschutz.html">App-Datenschutz</a>
+                <a href="agb.html">AGB</a>
+                <a href="nutzungsrichtlinien.html">Nutzungsrichtlinien</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
-        <p class="footer-copy">&copy; 2026 Loculix Studio. Alle Rechte vorbehalten.</p>
+        <p class="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
     </footer>
-
     <script src="main.js"></script>
-    <script>
-    (function () {
-
-        /* --- Scroll progress bar --- */
-        const progressBar = document.getElementById('scroll-progress');
-        if (progressBar) {
-            window.addEventListener('scroll', function () {
-                const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-                progressBar.style.transform = 'scaleX(' + Math.min(pct, 1) + ')';
-            }, { passive: true });
-        }
-
-        /* --- GSAP animations --- */
-        if (typeof gsap === 'undefined') {
-            document.querySelectorAll('.hero-word, .hero-el, .app-card-anim').forEach(function(el) {
-                el.style.opacity = '1';
-                el.style.transform = 'none';
-                el.style.filter = 'none';
-            });
-            return;
-        }
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Hero words (blur + slide up, staggered)
-        gsap.fromTo('.hero-word',
-            { opacity: 0, y: 52, filter: 'blur(10px)' },
-            { opacity: 1, y: 0,  filter: 'blur(0px)',
-              duration: 0.95, stagger: 0.13, ease: 'power3.out', delay: 0.15,
-              onComplete: function () {
-                  document.querySelectorAll('.hero-word').forEach(function (el) {
-                      el.style.willChange = 'auto';
-                  });
-              }
-            }
-        );
-
-        // Hero badge — fade only, no y-shift
-        gsap.fromTo('.hero-badge',
-            { opacity: 0 },
-            { opacity: 1, duration: 0.7, ease: 'power2.out', delay: 0.2 }
-        );
-
-        // Hero desc / buttons
-        gsap.fromTo('.hero-el:not(.hero-badge)',
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0,
-              duration: 0.75, stagger: 0.14, ease: 'power2.out', delay: 0.85,
-              onComplete: function () {
-                  document.querySelectorAll('.hero-el').forEach(function (el) {
-                      el.style.willChange = 'auto';
-                  });
-              }
-            }
-        );
-
-        // Section title + subtitle
-        gsap.fromTo('.section-title, .section-subtitle',
-            { opacity: 0, y: 28 },
-            { opacity: 1, y: 0, duration: 0.7, stagger: 0.13, ease: 'power2.out',
-              scrollTrigger: { trigger: '.apps-section', start: 'top 82%' }
-            }
-        );
-
-        // App cards — stagger + scale entrance
-        gsap.fromTo('.app-card-anim',
-            { opacity: 0, y: 48, scale: 0.96 },
-            { opacity: 1, y: 0,  scale: 1,
-              duration: 0.82, stagger: 0.13, ease: 'power3.out',
-              scrollTrigger: { trigger: '.apps-grid', start: 'top 88%' },
-              onComplete: function () {
-                  document.querySelectorAll('.app-card-anim').forEach(function (el) {
-                      el.style.willChange = 'auto';
-                  });
-              }
-            }
-        );
-
-        /* --- 3D Card tilt --- */
-        document.querySelectorAll('.app-card').forEach(function (card) {
-            let rafId, tx = 0, ty = 0, cx = 0, cy = 0;
-
-            function lerp(a, b, t) { return a + (b - a) * t; }
-
-            function step() {
-                cx = lerp(cx, tx, 0.09);
-                cy = lerp(cy, ty, 0.09);
-                card.style.transform =
-                    'perspective(1100px) rotateX(' + cx + 'deg) rotateY(' + cy + 'deg) translateY(-8px)';
-                rafId = requestAnimationFrame(step);
-            }
-
-            card.addEventListener('mousemove', function (e) {
-                const r = card.getBoundingClientRect();
-                const nx = (e.clientX - r.left) / r.width  - 0.5;
-                const ny = (e.clientY - r.top)  / r.height - 0.5;
-                tx = ny * -10;
-                ty = nx *  10;
-            });
-
-            card.addEventListener('mouseenter', function () {
-                card.classList.add('is-tilting');
-                cancelAnimationFrame(rafId);
-                step();
-            });
-
-            card.addEventListener('mouseleave', function () {
-                cancelAnimationFrame(rafId);
-                tx = 0; ty = 0; cx = 0; cy = 0;
-                card.classList.remove('is-tilting');
-                card.style.transform = '';
-            });
-        });
-
-    })();
-    </script>
 </body>
-
 </html>
