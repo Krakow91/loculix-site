@@ -1,0 +1,664 @@
+/* --- Portfolio-specific styles --- */
+
+/* Only hide GSAP targets when JS is confirmed available */
+html.js .portfolio-page .gsap-fade-up {
+    opacity: 0;
+    visibility: visible;
+}
+
+/* --- Portfolio Hero --- */
+.portfolio-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px var(--space-lg) var(--space-hero);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-primary);
+}
+
+.portfolio-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+}
+
+/* Eyebrow — minimal, no pill */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 44px;
+    max-width: none;
+}
+
+.hero-badge-dot {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: var(--accent-gold);
+    flex-shrink: 0;
+    animation: badge-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.35; }
+}
+
+.portfolio-hero h1 {
+    font-size: clamp(4.2rem, 11vw, 9rem);
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    margin-bottom: 44px;
+    color: var(--text-primary);
+}
+
+.portfolio-hero h1 em {
+    font-style: italic;
+    display: block;
+    color: var(--accent-gold);
+}
+
+/* Disable shimmer — clean static gold on light bg */
+.portfolio-hero .shimmer-text {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: var(--accent-gold);
+    animation: none;
+    filter: none;
+}
+
+/* Buttons */
+.portfolio-page .btn-primary {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #D4B020 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 20px rgba(184,150,12,0.28);
+}
+
+.portfolio-page .btn-primary:hover {
+    background: linear-gradient(135deg, #C8A010 0%, #E8C840 100%);
+    box-shadow: 0 8px 32px rgba(184,150,12,0.4);
+    transform: translateY(-2px);
+    color: #fff !important;
+}
+
+.portfolio-hero-desc {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: var(--text-secondary);
+    margin: 0 auto 52px;
+    max-width: 500px;
+    line-height: 1.75;
+}
+
+.portfolio-hero-desc em {
+    color: var(--text-primary);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* --- Nav App Links --- */
+.nav-app-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nav-app-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.nav-app-icon--emoji {
+    font-size: 1.1rem;
+    line-height: 1;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.nav-divider {
+    width: 1px;
+    height: 18px;
+    background: rgba(92, 64, 51, 0.15);
+    margin: 0 4px;
+}
+
+/* --- Section Titles --- */
+.section-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 0 auto var(--space-xxl);
+    max-width: 560px;
+}
+
+/* --- Apps Section --- */
+.apps-section {
+    background: var(--bg-secondary);
+    padding: var(--space-hero) 0;
+    border-top: 1px solid rgba(92, 64, 51, 0.06);
+    border-bottom: 1px solid rgba(92, 64, 51, 0.06);
+}
+
+/* --- App Grid --- */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+}
+
+/* --- App Card Base --- */
+.app-card {
+    position: relative;
+    border-radius: var(--rad-lg);
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-soft);
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.app-card-inner {
+    position: relative;
+    z-index: 1;
+    padding: var(--space-xl);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.app-card-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* --- Loculix Card --- */
+.app-card--loculix {
+    background: var(--bg-primary);
+    border: 1px solid rgba(92, 64, 51, 0.08);
+}
+
+.app-card--loculix .app-card-bg {
+    background: radial-gradient(ellipse at top right, rgba(184, 150, 12, 0.06) 0%, transparent 60%);
+}
+
+.app-card--loculix .app-name,
+.app-card--loculix .app-card-cta {
+    color: var(--accent-primary);
+}
+
+.app-card--loculix .app-card-cta {
+    color: var(--accent-gold);
+}
+
+.app-icon--loculix {
+    background: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(92, 64, 51, 0.2);
+}
+
+.app-icon--loculix img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    display: block;
+}
+
+/* --- Mia Card --- */
+.app-card--mia {
+    background: #0F0F1A;
+    border: 1px solid rgba(78, 205, 196, 0.15);
+    color: #fff;
+}
+
+.app-card--mia .app-card-bg {
+    background: radial-gradient(ellipse at top left, rgba(78, 205, 196, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at bottom right, rgba(255, 107, 107, 0.08) 0%, transparent 60%);
+}
+
+.app-card--mia .app-name {
+    color: #fff;
+    text-shadow: 0 0 30px rgba(78, 205, 196, 0.3);
+}
+
+.app-card--mia .app-desc {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.app-card--mia .app-card-cta {
+    color: #4ECDC4;
+}
+
+.app-card--mia .tag {
+    background: rgba(78, 205, 196, 0.12);
+    color: #4ECDC4;
+    border-color: rgba(78, 205, 196, 0.2);
+}
+
+.app-card--mia .app-platform {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.app-icon--mia {
+    background: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.app-icon--mia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    display: block;
+}
+
+/* --- Games Card --- */
+.app-card--games {
+    background: #0D0D1F;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    color: #fff;
+}
+
+.app-card--games .app-card-bg {
+    background: radial-gradient(ellipse at top right, rgba(99, 102, 241, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at bottom left, rgba(168, 85, 247, 0.08) 0%, transparent 60%);
+}
+
+.app-card--games .app-name {
+    color: #fff;
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+}
+
+.app-card--games .app-desc {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.app-card--games .app-card-cta {
+    color: #818CF8;
+}
+
+.app-card--games .tag {
+    background: rgba(99, 102, 241, 0.12);
+    color: #818CF8;
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.app-card--games .app-platform {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.app-icon--games {
+    background: linear-gradient(135deg, #1A1A2E, #0A0A1A);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    font-size: 1.5rem;
+}
+
+/* --- Card Elements --- */
+.app-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px; /* iOS App Store icon radius ~22% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.app-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.app-platform {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.app-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: var(--rad-full);
+    display: inline-block;
+    width: fit-content;
+}
+
+.app-status--soon {
+    background: rgba(184, 150, 12, 0.12);
+    color: var(--accent-gold);
+}
+
+.app-status--wip {
+    background: rgba(99, 102, 241, 0.12);
+    color: #818CF8;
+}
+
+.app-name {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.app-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+    max-width: none;
+}
+
+.app-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: auto;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: var(--rad-full);
+    background: rgba(92, 64, 51, 0.06);
+    color: var(--text-secondary);
+    border: 1px solid rgba(92, 64, 51, 0.1);
+}
+
+.app-card-cta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: var(--space-md);
+    color: var(--accent-gold);
+    transition: gap 0.25s ease;
+}
+
+.app-card:hover .app-card-cta {
+    gap: 10px;
+}
+
+/* --- Hero Button Group --- */
+.hero-btn-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* --- About Section --- */
+.about-section {
+    padding: var(--space-hero) 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+    max-width: none;
+}
+
+.about-text h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+}
+
+.about-text p {
+    max-width: 100%;
+}
+
+.about-values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    padding-top: var(--space-sm);
+}
+
+.value-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+.value-icon {
+    color: var(--accent-gold);
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.value-item h4 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.value-item p {
+    font-size: 0.95rem;
+    margin: 0;
+    max-width: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xxl);
+    }
+
+    .portfolio-hero h1 {
+        font-size: clamp(2.8rem, 11vw, 4.5rem);
+    }
+
+    .portfolio-hero-desc {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-card-inner {
+        padding: var(--space-lg);
+    }
+
+    .portfolio-hero {
+        padding-top: 100px;
+    }
+}
+
+/* =========================================
+   Enhanced Animations v2.0
+   ========================================= */
+
+/* Scroll progress bar */
+#scroll-progress {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-gold), #F0D060, var(--accent-gold));
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/* Hero word entrance — hidden only when JS runs */
+.hero-word {
+    display: inline-block;
+}
+
+html.js .hero-word {
+    opacity: 0;
+    will-change: opacity, transform, filter;
+}
+
+html.js .hero-el {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+/* Shimmer on "begeistert." */
+@keyframes shimmer-gold {
+    0%   { background-position: 0% center; }
+    100% { background-position: -200% center; }
+}
+
+.shimmer-text {
+    background: linear-gradient(
+        120deg,
+        #B89010 0%,
+        #E8C840 22%,
+        #FFF0A0 50%,
+        #E8C840 78%,
+        #B89010 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-gold 4s linear infinite;
+    filter: drop-shadow(0 0 28px rgba(200,160,0,0.38));
+}
+
+/* Marquee strip */
+.marquee-strip {
+    overflow: hidden;
+    padding: 18px 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid rgba(92, 64, 51, 0.07);
+    border-bottom: 1px solid rgba(92, 64, 51, 0.07);
+    user-select: none;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee-scroll 40s linear infinite;
+    will-change: transform;
+}
+
+.marquee-strip:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    padding: 0 28px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.marquee-sep {
+    color: var(--accent-gold);
+    font-size: 0.5rem;
+    opacity: 0.7;
+}
+
+/* App card initial state for entrance */
+html.js .app-card-anim {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+/* Enhanced card hover glow */
+.app-card--mia:hover {
+    box-shadow: 0 28px 64px rgba(78, 205, 196, 0.22),
+                0 8px 24px rgba(0, 0, 0, 0.32),
+                0 0 0 1px rgba(78, 205, 196, 0.28) !important;
+}
+
+.app-card--games:hover {
+    box-shadow: 0 28px 64px rgba(99, 102, 241, 0.22),
+                0 8px 24px rgba(0, 0, 0, 0.32),
+                0 0 0 1px rgba(99, 102, 241, 0.28) !important;
+}
+
+.app-card--loculix:hover {
+    box-shadow: 0 28px 64px rgba(184, 150, 12, 0.14),
+                0 8px 24px rgba(92, 64, 51, 0.14),
+                0 0 0 1px rgba(184, 150, 12, 0.22) !important;
+}
+
+/* Card during tilt — suppress default transition */
+.app-card.is-tilting {
+    transition: box-shadow 0.35s ease !important;
+}
+
+/* Value item initial state */
+.value-item-anim {
+    opacity: 0;
+    will-change: opacity, transform;
+}

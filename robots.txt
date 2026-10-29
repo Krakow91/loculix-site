@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krakow91.github.io/loculix-site/sitemap.xml
