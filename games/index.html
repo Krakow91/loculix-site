@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games – Loculix Studio</title>
+    <meta name="description" content="Spieleentwicklung von Loculix Studio. Demnächst.">
+
+    <link rel="canonical" href="https://www.loculix.de/games/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+    <meta name="theme-color" content="#0D0D1F">
+
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="games.css?v=1.0">
+
+    <script src="../js/gsap.min.js"></script>
+</head>
+
+<body class="games-page">
+
+    <!-- Back Button -->
+    <a href="../index" class="games-back-btn" aria-label="Zurück zur Übersicht">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Alle Apps
+    </a>
+
+    <!-- Background -->
+    <div class="games-bg" aria-hidden="true">
+        <div class="games-glow games-glow-1"></div>
+        <div class="games-glow games-glow-2"></div>
+        <div class="games-grid-overlay"></div>
+    </div>
+
+    <main class="games-main">
+        <div class="games-content">
+            <div class="games-icon gsap-fade-up" aria-hidden="true">🎮</div>
+
+            <div class="games-tag gsap-fade-up delay-1">Loculix Studio · Coming Soon</div>
+
+            <h1 class="gsap-fade-up delay-2">
+                Etwas Schönes<br>
+                <span class="games-gradient-text">entsteht gerade.</span>
+            </h1>
+
+            <p class="games-desc gsap-fade-up delay-3">
+                Spieleentwicklung liegt in der Luft. Was genau, bleibt noch ein kleines Geheimnis – aber es wird gut. Versprochen.
+            </p>
+
+            <div class="games-cta gsap-fade-up delay-4">
+                <a href="../index" class="games-btn">← Zurück zur Übersicht</a>
+            </div>
+
+            <!-- Floating elements -->
+            <div class="games-floaties" aria-hidden="true">
+                <span class="floaty" style="--d: 0s; --x: 10%; --y: 20%">⭐</span>
+                <span class="floaty" style="--d: 0.5s; --x: 85%; --y: 15%">✦</span>
+                <span class="floaty" style="--d: 1s; --x: 75%; --y: 70%">◆</span>
+                <span class="floaty" style="--d: 1.5s; --x: 15%; --y: 75%">★</span>
+                <span class="floaty" style="--d: 0.8s; --x: 50%; --y: 10%">✧</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="games-footer">
+        <div class="games-footer-links">
+            <a href="../datenschutz">Datenschutz</a>
+            <a href="../impressum">Impressum</a>
+            <a href="../kontakt">Kontakt</a>
+        </div>
+        <p>&copy; 2026 Loculix Studio</p>
+    </footer>
+
+    <script>
+        if (typeof gsap !== 'undefined') {
+            gsap.fromTo('.gsap-fade-up',
+                { opacity: 0, y: 20 },
+                {
+                    opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+                    stagger: (i, el) => {
+                        if (el.classList.contains('delay-1')) return 0.15;
+                        if (el.classList.contains('delay-2')) return 0.30;
+                        if (el.classList.contains('delay-3')) return 0.45;
+                        if (el.classList.contains('delay-4')) return 0.60;
+                        return 0;
+                    }
+                }
+            );
+        }
+    </script>
+</body>
+
+</html>

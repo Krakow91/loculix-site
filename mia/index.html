@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia – Dein KI-Fitness-Coach</title>
+    <meta name="description"
+        content="Mia ist dein persönlicher KI-Fitness-Coach. Evidenzbasiertes Training, intelligente Periodisierung und Coaching, das sich anfühlt wie ein echter Personal Trainer.">
+
+    <link rel="canonical" href="https://www.loculix.de/mia/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+    <meta name="theme-color" content="#0A0A0F">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.loculix.de/mia/">
+    <meta property="og:title" content="Mia – Dein KI-Fitness-Coach">
+    <meta property="og:description" content="Evidenzbasiertes Training trifft intelligenten Coaching. Mia kennt die Wissenschaft – und kennt dich.">
+    <meta property="og:image" content="https://www.loculix.de/img/loculix-mockup.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Loculix Studio">
+
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="mia.css?v=1.0">
+
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="mia-page">
+
+    <!-- Navigation -->
+    <nav class="mia-nav">
+        <a href="../index" class="mia-logo" aria-label="Loculix Studio">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="flex-shrink:0">
+                <defs>
+                    <linearGradient id="logo-g-mia" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#F0D060"/>
+                        <stop offset="100%" stop-color="#C8A820"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-mia)" stroke-width="0.75" fill="none" opacity="0.7"/>
+                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-mia)" stroke-width="0.4" fill="none" opacity="0.3"/>
+                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-mia)"/>
+                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-mia)"/>
+            </svg>
+            <div style="display:flex;flex-direction:column;gap:3px">
+                <span style="font-family:'Playfair Display',Georgia,serif;font-weight:600;letter-spacing:0.04em;color:#EDE0C8;font-size:1.35rem;line-height:1">Mia</span>
+                <div style="height:1px;background:linear-gradient(90deg,rgba(240,208,80,0.6),rgba(240,208,80,0));width:100%"></div>
+            </div>
+        </a>
+        <div class="mia-nav-links" id="mia-nav-links">
+            <a href="#features">Features</a>
+            <a href="#science">Wissenschaft</a>
+            <a href="#cta">Warteliste</a>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+            <a href="#cta" class="mia-nav-btn mia-nav-btn-desktop">Warteliste</a>
+            <button class="mia-hamburger" id="mia-hamburger" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <a href="../index" class="mia-back-btn" aria-label="Zurück zur Übersicht">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Alle Apps
+    </a>
+
+    <main>
+        <!-- Hero -->
+        <section class="mia-hero" id="hero">
+            <!-- Background glow effects -->
+            <div class="mia-glow mia-glow-teal" aria-hidden="true"></div>
+            <div class="mia-glow mia-glow-coral" aria-hidden="true"></div>
+
+            <div class="mia-hero-content">
+                <div class="mia-app-icon-hero gsap-fade-up">
+                    <img src="../img/mia-icon.png" alt="Mia App Icon">
+                </div>
+                <div class="mia-eyebrow gsap-fade-up delay-1">
+                    <span class="mia-badge">KI-Fitness-Coach</span>
+                    <span class="mia-badge-sep">·</span>
+                    <span>iOS</span>
+                </div>
+                <h1 class="gsap-fade-up delay-2">Dein Coach.<br><span class="mia-gradient-text">Kennt die Wissenschaft.</span><br>Kennt dich.</h1>
+                <p class="mia-hero-desc gsap-fade-up delay-3">
+                    Kein generischer Trainingsplan. Mia analysiert dein Niveau, deine Ziele und deinen Fortschritt – und passt jede Einheit dynamisch an. Wie ein echter Personal Trainer, immer dabei.
+                </p>
+                <div class="mia-hero-actions gsap-fade-up delay-4">
+                    <a href="#cta" class="mia-btn mia-btn-primary">Auf die Warteliste</a>
+                    <a href="#features" class="mia-btn mia-btn-ghost">Features ansehen</a>
+                </div>
+            </div>
+
+            <!-- Floating stat cards -->
+            <div class="mia-hero-stats gsap-fade-up delay-4">
+                <div class="mia-stat-card">
+                    <span class="mia-stat-value">100%</span>
+                    <span class="mia-stat-label">Evidenzbasiert</span>
+                </div>
+                <div class="mia-stat-card mia-stat-card--accent">
+                    <span class="mia-stat-value">On-Device</span>
+                    <span class="mia-stat-label">KI, keine Cloud</span>
+                </div>
+                <div class="mia-stat-card">
+                    <span class="mia-stat-value">∞</span>
+                    <span class="mia-stat-label">Übungen</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="mia-features" id="features">
+            <div class="mia-container">
+                <h2 class="mia-section-title gsap-fade-up">Alles, was ein guter Coach wissen muss.</h2>
+                <p class="mia-section-subtitle gsap-fade-up delay-1">Mia kombiniert sportwissenschaftliche Erkenntnisse mit intelligenter Personalisierung – kein Einheitsplan, sondern deiner.</p>
+
+                <div class="mia-features-grid">
+
+                    <!-- Feature 1: Coaching -->
+                    <div class="mia-feature-card mia-feature-card--wide gsap-fade-up">
+                        <div class="mia-feature-icon mia-icon-teal">🧠</div>
+                        <h3>KI-Coach, der zuhört</h3>
+                        <p>Mia fragt gezielt nach: Ziel, Erfahrungslevel, verfügbare Ausrüstung, Einschränkungen. Basierend darauf erstellt sie einen Plan, der wirklich zu dir passt – und erklärt dir, warum.</p>
+                        <div class="mia-feature-highlight">
+                            <div class="mia-chat-bubble mia-chat-bubble--mia">
+                                "Du trainierst 3x pro Woche mit Push/Pull/Legs – das maximiert die Muskelproteinsynthese bei deiner Trainingsfrequenz."
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Progressive Overload -->
+                    <div class="mia-feature-card gsap-fade-up delay-1">
+                        <div class="mia-feature-icon mia-icon-coral">📈</div>
+                        <h3>Progressive Overload</h3>
+                        <p>Dein letztes Training immer im Blick. Mia zeigt dir Gewicht und Wiederholungen vom letzten Mal und hilft dir, systematisch zu steigern.</p>
+                        <div class="mia-progress-preview">
+                            <div class="mia-progress-row">
+                                <span>Letztes Mal</span>
+                                <span class="muted">80kg × 8</span>
+                            </div>
+                            <div class="mia-progress-row mia-progress-row--current">
+                                <span>Heute</span>
+                                <span class="accent-teal">82.5kg × 8 🔥</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: Periodisierung -->
+                    <div class="mia-feature-card gsap-fade-up delay-2">
+                        <div class="mia-feature-icon mia-icon-purple">🔄</div>
+                        <h3>Automatische Periodisierung</h3>
+                        <p>Linear, undulierend oder Blockperiodisierung – Mia wählt und passt an. Inklusive Deload-Phasen genau dann, wenn dein Körper sie braucht.</p>
+                    </div>
+
+                    <!-- Feature 4: RPE / RIR -->
+                    <div class="mia-feature-card gsap-fade-up">
+                        <div class="mia-feature-icon mia-icon-amber">⚡</div>
+                        <h3>RPE & RIR Steuerung</h3>
+                        <p>Trainiere nach Intensität, nicht nur nach Zahlen. Mia unterstützt Rate of Perceived Exertion und Reps in Reserve für optimale Belastungssteuerung.</p>
+                    </div>
+
+                    <!-- Feature 5: Equipment -->
+                    <div class="mia-feature-card gsap-fade-up delay-1">
+                        <div class="mia-feature-icon mia-icon-teal">🏋️</div>
+                        <h3>Gerätedatenbank</h3>
+                        <p>Vollständige Bibliothek aller Fitnessgeräte mit Muskelgruppen, korrekter Ausführung und automatischer Geräteauswahl basierend auf deinem letzten Training.</p>
+                    </div>
+
+                    <!-- Feature 6: Sessions -->
+                    <div class="mia-feature-card mia-feature-card--wide gsap-fade-up delay-2">
+                        <div class="mia-feature-icon mia-icon-coral">⏱</div>
+                        <h3>Aktive Trainingseinheit</h3>
+                        <p>Während du trainierst, führt Mia dich durch jede Übung. Automatische Pausentimer (2-3 Min für Kraft, 60-90 Sek für Hypertrophie), Satz-Tracking und nach dem Training eine vollständige Zusammenfassung mit Gesamtvolumen und persönlichen Rekorden.</p>
+                        <div class="mia-session-preview">
+                            <div class="mia-session-row">
+                                <span class="mia-session-exercise">Bankdrücken</span>
+                                <div class="mia-session-sets">
+                                    <span class="mia-set mia-set--done">✓</span>
+                                    <span class="mia-set mia-set--done">✓</span>
+                                    <span class="mia-set mia-set--active">3</span>
+                                    <span class="mia-set mia-set--todo">4</span>
+                                </div>
+                                <span class="mia-session-weight">80kg</span>
+                            </div>
+                            <div class="mia-pause-timer">
+                                <span>Pause</span>
+                                <span class="accent-teal">1:45</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Section -->
+        <section class="mia-science" id="science">
+            <div class="mia-container">
+                <div class="mia-science-grid">
+                    <div class="mia-science-text gsap-slide-right">
+                        <div class="mia-eyebrow mia-eyebrow-sm">Sportwissenschaft</div>
+                        <h2>Nicht Halbwahrheiten.<br>Echte Wissenschaft.</h2>
+                        <p>Mias Empfehlungen basieren auf aktuellen Meta-Analysen und sportwissenschaftlichen Leitlinien. Kein Bro-Science, keine Clickbait-Pläne.</p>
+                        <ul class="mia-science-list">
+                            <li>
+                                <span class="mia-check">✓</span>
+                                Hypertrophie-Protokolle nach Schoenfeld et al.
+                            </li>
+                            <li>
+                                <span class="mia-check">✓</span>
+                                ACSM-Guidelines für Kraft & Ausdauer
+                            </li>
+                            <li>
+                                <span class="mia-check">✓</span>
+                                Optimale Trainingsfrequenz pro Muskelgruppe
+                            </li>
+                            <li>
+                                <span class="mia-check">✓</span>
+                                Evidenzbasierte Pausenzeiten & Intensitätssteuerung
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mia-science-visual gsap-slide-left">
+                        <div class="mia-goals-grid">
+                            <div class="mia-goal-card">
+                                <span class="mia-goal-icon">💪</span>
+                                <span>Muskelaufbau</span>
+                            </div>
+                            <div class="mia-goal-card mia-goal-card--active">
+                                <span class="mia-goal-icon">🏃</span>
+                                <span>Ausdauer</span>
+                            </div>
+                            <div class="mia-goal-card">
+                                <span class="mia-goal-icon">⚖️</span>
+                                <span>Gewichtsverlust</span>
+                            </div>
+                            <div class="mia-goal-card">
+                                <span class="mia-goal-icon">🧘</span>
+                                <span>Gesund leben</span>
+                            </div>
+                            <div class="mia-goal-card">
+                                <span class="mia-goal-icon">🔥</span>
+                                <span>Rekomposition</span>
+                            </div>
+                            <div class="mia-goal-card">
+                                <span class="mia-goal-icon">🏆</span>
+                                <span>Kraftzuwachs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mia-cta" id="cta">
+            <div class="mia-glow mia-glow-teal mia-glow-center" aria-hidden="true"></div>
+            <div class="mia-container mia-cta-inner">
+                <h2 class="gsap-fade-up">Bereit für deinen<br><span class="mia-gradient-text">persönlichen Coach?</span></h2>
+                <p class="gsap-fade-up delay-1">Trag dich auf die Warteliste ein und erfahre als Erster, wenn Mia startet.</p>
+                <form action="https://formsubmit.co/info@loculix.de" method="POST" class="mia-cta-form gsap-fade-up delay-2">
+                    <input type="hidden" name="_subject" value="Neuer Wartelisten-Eintrag für Mia!">
+                    <input type="hidden" name="_next" value="https://www.loculix.de/danke">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="email" name="email" placeholder="Deine E-Mail Adresse" class="mia-input" required>
+                    <button type="submit" class="mia-btn mia-btn-primary">Auf die Warteliste</button>
+                </form>
+                <p class="mia-cta-note gsap-fade-up delay-3">Demnächst für iOS. Kein Spam, versprochen.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mia-footer">
+        <div class="mia-footer-content">
+            <div class="mia-footer-logo">Mia · Loculix Studio</div>
+            <div class="mia-footer-links">
+                <a href="datenschutz">Datenschutz</a>
+                <a href="app-datenschutz">App-Datenschutz</a>
+                <a href="agb">AGB</a>
+                <a href="nutzungsrichtlinien">Nutzungsrichtlinien</a>
+                <a href="impressum">Impressum</a>
+                <a href="kontakt">Kontakt</a>
+                <a href="../index">Alle Apps</a>
+            </div>
+        </div>
+        <p class="mia-footer-copy">&copy; 2026 Loculix Studio. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        // Hamburger
+        const ham = document.getElementById('mia-hamburger');
+        const nav = document.getElementById('mia-nav-links');
+        if (ham && nav) {
+            ham.addEventListener('click', () => {
+                ham.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+        }
+
+        // GSAP
+        if (typeof gsap !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero fade-ups
+            gsap.utils.toArray('.gsap-fade-up').forEach((el, i) => {
+                const delay = el.classList.contains('delay-1') ? 0.15 :
+                              el.classList.contains('delay-2') ? 0.30 :
+                              el.classList.contains('delay-3') ? 0.45 :
+                              el.classList.contains('delay-4') ? 0.60 : 0;
+                gsap.fromTo(el,
+                    { opacity: 0, y: 24 },
+                    {
+                        opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+                        delay: el.closest('.mia-hero') ? delay : 0,
+                        scrollTrigger: el.closest('.mia-hero') ? null : { trigger: el, start: 'top 82%' }
+                    }
+                );
+            });
+
+            gsap.utils.toArray('.gsap-slide-right').forEach(el => {
+                gsap.fromTo(el, { opacity: 0, x: -40 },
+                    { opacity: 1, x: 0, duration: 0.8, ease: 'power3.out',
+                      scrollTrigger: { trigger: el, start: 'top 80%' } });
+            });
+            gsap.utils.toArray('.gsap-slide-left').forEach(el => {
+                gsap.fromTo(el, { opacity: 0, x: 40 },
+                    { opacity: 1, x: 0, duration: 0.8, ease: 'power3.out',
+                      scrollTrigger: { trigger: el, start: 'top 80%' } });
+            });
+        }
+    </script>
+</body>
+
+</html>

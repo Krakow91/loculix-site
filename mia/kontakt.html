@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Mia</title>
+    <meta name="description" content="Kontakt für Mia – KI-Fitness-Coach. Fragen, Feedback oder Support zur iOS-App.">
+    <link rel="canonical" href="https://www.loculix.de/mia/kontakt">
+    <link rel="stylesheet" href="mia.css">
+    <style>
+        .legal-main { padding: 120px 32px 80px; max-width: 600px; margin: 0 auto; min-height: calc(100vh - 80px); }
+        .legal-main h1 { color: var(--mia-text); margin-bottom: 8px; }
+        .legal-main p { color: var(--mia-text-muted); line-height: 1.7; }
+        .legal-main strong { color: rgba(255,255,255,0.85); }
+        .text-center { text-align: center; }
+        .contact-form { display: flex; flex-direction: column; gap: 16px; background: var(--mia-surface); padding: 32px; border-radius: 20px; border: 1px solid var(--mia-border); margin-top: 24px; }
+        .contact-form input, .contact-form textarea, .contact-form select { padding: 14px 20px; border-radius: 8px; border: 1px solid var(--mia-border); font-family: var(--font-body); font-size: 1rem; background: var(--mia-surface-hi); color: var(--mia-text); outline: none; transition: border-color 0.25s; }
+        .contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--mia-text-dim); }
+        .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: rgba(78,205,196,0.4); }
+        .contact-form textarea { resize: vertical; min-height: 150px; }
+        .contact-form label { font-weight: 500; color: rgba(255,255,255,0.75); font-size: 0.9rem; }
+        .contact-form select option { background: var(--mia-surface); }
+        .contact-info { background: var(--mia-surface); border: 1px solid var(--mia-border); border-radius: 12px; padding: 24px; margin-top: 32px; }
+        .contact-info p { color: var(--mia-text-muted); margin: 0; line-height: 1.7; }
+        .contact-info a { color: var(--mia-teal); text-decoration: underline; }
+        .section-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mia-text-dim); margin-bottom: 12px; }
+        .btn-gold { display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; border-radius: 999px; font-size: 1rem; font-weight: 600; border: none; cursor: pointer; background: linear-gradient(135deg, var(--mia-teal), #3B82F6); color: #fff; box-shadow: 0 4px 24px rgba(78,205,196,0.25); transition: all 0.25s ease; }
+        .btn-gold:hover { opacity: 0.9; transform: translateY(-1px); }
+    </style>
+</head>
+<body class="mia-page">
+    <nav class="mia-nav">
+        <a href="index" class="mia-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="flex-shrink:0">
+                <defs><linearGradient id="logo-g-mia-kontakt" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D060"/><stop offset="100%" stop-color="#C8A820"/></linearGradient></defs>
+                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-mia-kontakt)" stroke-width="0.75" fill="none" opacity="0.7"/>
+                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-mia-kontakt)" stroke-width="0.4" fill="none" opacity="0.3"/>
+                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-mia-kontakt)"/>
+                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-mia-kontakt)"/>
+            </svg>
+            Mia
+        </a>
+        <a href="index" class="mia-nav-btn">Zurück zur App</a>
+    </nav>
+
+    <main class="legal-main">
+        <h1 class="text-center">Kontakt</h1>
+        <p class="text-center" style="color: var(--mia-text-muted);">Hast du Fragen zu Mia, Feedback zur Beta oder brauchst Support? Schreib uns – wir freuen uns von dir zu hören.</p>
+
+        <form action="https://formsubmit.co/info@loculix.de" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage – Mia App">
+            <input type="hidden" name="_next" value="https://www.loculix.de/danke">
+            <input type="text" name="_honey" style="display:none">
+
+            <div>
+                <label for="name">Dein Name</label>
+                <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+            </div>
+            <div>
+                <label for="email">Deine E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" placeholder="max@beispiel.de" required>
+            </div>
+            <div>
+                <label for="topic">Thema</label>
+                <select id="topic" name="topic">
+                    <option value="Warteliste">Warteliste / Beta-Zugang</option>
+                    <option value="Feedback">Feedback zur App</option>
+                    <option value="Support">Technischer Support</option>
+                    <option value="Datenschutz">Datenschutz-Anfrage</option>
+                    <option value="Sonstiges">Sonstiges</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Deine Nachricht</label>
+                <textarea id="message" name="message" placeholder="Wie können wir dir helfen?" required></textarea>
+            </div>
+            <button type="submit" class="btn-gold" style="width: 100%;">Nachricht abschicken</button>
+        </form>
+
+        <div class="contact-info">
+            <p class="section-label">Direkter Kontakt</p>
+            <p>
+                <strong>Alexander Krakow · Loculix Studio</strong><br>
+                E-Mail: <a href="mailto:info@loculix.de">info@loculix.de</a><br>
+                Antwortzeit: in der Regel innerhalb von 2–3 Werktagen
+            </p>
+        </div>
+    </main>
+
+    <footer class="mia-footer">
+        <div class="mia-footer-content">
+            <div class="mia-footer-logo">Mia · Loculix Studio</div>
+            <div class="mia-footer-links">
+                <a href="datenschutz">Datenschutz</a>
+                <a href="app-datenschutz">App-Datenschutz</a>
+                <a href="agb">AGB</a>
+                <a href="nutzungsrichtlinien">Nutzungsrichtlinien</a>
+                <a href="impressum">Impressum</a>
+                <a href="kontakt">Kontakt</a>
+            </div>
+        </div>
+        <p class="mia-footer-copy">&copy; 2026 Loculix Studio. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

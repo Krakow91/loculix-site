@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loculix – Dein digitaler Aktenschrank</title>
+    <meta name="description"
+        content="Verwandle deinen physischen Aktenschrank in eine elegante, sichere digitale Lösung. Loculix ist dein intelligenter Dokumentenmanager mit Scanner und OCR.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.loculix.de/loculix/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FEFCF6">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.loculix.de/loculix/">
+    <meta property="og:title" content="Loculix – Dein digitaler Aktenschrank">
+    <meta property="og:description" content="Endlich Ordnung. Elegant, sicher und intelligent. Die App, die deine Dokumente automatisch sortiert und verwaltet.">
+    <meta property="og:image" content="https://www.loculix.de/img/loculix-mockup.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Loculix">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Loculix – Dein digitaler Aktenschrank">
+    <meta name="twitter:description" content="Endlich Ordnung. Elegant, sicher und intelligent. Die App, die deine Dokumente automatisch sortiert und verwaltet.">
+    <meta name="twitter:image" content="https://www.loculix.de/img/loculix-mockup.png">
+
+    <!-- Fonts (lokal eingebunden, DSGVO-konform) -->
+    <link rel="stylesheet" href="../fonts.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style.css?v=1.2">
+
+    <!-- GSAP for Animations (lokal eingebunden, DSGVO-konform) -->
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="../index" class="logo">
+            <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="logo-g-loculix" x1="10" y1="8" x2="30" y2="32" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#C8A010"/>
+                        <stop offset="100%" stop-color="#9A7800"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="20" cy="20" r="17.5" stroke="url(#logo-g-loculix)" stroke-width="0.75" fill="none" opacity="0.7"/>
+                <circle cx="20" cy="20" r="15.5" stroke="url(#logo-g-loculix)" stroke-width="0.4" fill="none" opacity="0.3"/>
+                <rect x="13" y="11" width="3.5" height="17" rx="0.3" fill="url(#logo-g-loculix)"/>
+                <rect x="13" y="24.5" width="14" height="3.5" rx="0.3" fill="url(#logo-g-loculix)"/>
+            </svg>
+            <div class="logo-wordmark">
+                <span class="logo-name">Loculix</span>
+                <div class="logo-rule"></div>
+            </div>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#vision">Die Vision</a>
+            <a href="#features">Features</a>
+            <a href="#security">Sicherheit</a>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <button id="lang-toggle" class="lang-toggle">EN</button>
+            <a href="#cta" class="nav-btn nav-btn-desktop">Warteliste beitreten</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Back to Overview -->
+    <a href="../index" class="back-btn" aria-label="Zurück zur Übersicht">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Alle Apps
+    </a>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="gsap-reveal" data-i18n="hero-title">Dein digitaler <br>Aktenschrank.</h1>
+                <p class="gsap-reveal hero-subtitle" data-i18n="hero-subtitle">Endlich Ordnung. Elegant, sicher und intelligent. Die App, die
+                    deine Dokumente automatisch sortiert und verwaltet.</p>
+                <div class="hero-actions gsap-reveal">
+                    <a href="#features" class="btn btn-primary" data-i18n="hero-btn-primary">Features entdecken</a>
+                    <a href="#vision" class="btn btn-secondary" data-i18n="hero-btn-secondary">Wie es funktioniert</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper gsap-image">
+                <picture>
+                    <source srcset="../img/loculix-mockup.webp" type="image/webp">
+                    <img src="../img/loculix-mockup.png"
+                        alt="Loculix App – Dein digitaler Aktenschrank als elegante 3D-Ansicht" class="hero-image"
+                        width="1024" height="1024" loading="eager">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision" id="vision">
+            <div class="section-container">
+                <div class="vision-text text-center">
+                    <h2 class="gsap-fade-up" data-i18n="vision-title">Schluss mit dem Papierchaos.</h2>
+                    <p class="gsap-fade-up delay-1" data-i18n="vision-desc">Loculix bildet die gewohnte Ordnerstruktur deines Aktenschranks
+                        visuell nach. Mit realistischen Blätter-Animationen und intelligentem Scan-Workflow.</p>
+                </div>
+                <div class="vision-cards">
+                    <div class="vision-card gsap-fade-up">
+                        <div class="icon">🔍</div>
+                        <h3 data-i18n="vision-card1-title">Einfaches Scannen</h3>
+                        <p data-i18n="vision-card1-desc">Kamera aktivieren, Dokument erkennen, automatisch zuschneiden. So einfach war Scannen noch
+                            nie.</p>
+                    </div>
+                    <div class="vision-card gsap-fade-up delay-1">
+                        <div class="icon">🧠</div>
+                        <h3 data-i18n="vision-card2-title">Intelligente Extraktion</h3>
+                        <p data-i18n="vision-card2-desc">Loculix erkennt Vertragsnummern, Beträge und Fristen ganz automatisch über On-Device KI.</p>
+                    </div>
+                    <div class="vision-card gsap-fade-up delay-2">
+                        <div class="icon">📂</div>
+                        <h3 data-i18n="vision-card3-title">Automatische Ablage</h3>
+                        <p data-i18n="vision-card3-desc">Dokumente werden vom System analysiert und direkt dem passenden virtuellen Ordner zugewiesen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <!-- Feature 1: Cabinet -->
+            <div class="feature-row">
+                <div class="feature-text gsap-slide-right">
+                    <h2 data-i18n="feat1-title">Der virtuelle Schrank.</h2>
+                    <p data-i18n="feat1-desc">Erlebe deine Dokumente in einer wunderschönen, haptisch anmutenden Oberfläche. Ordner kippen beim Klicken auf, Seiten lassen sich realistisch umblättern wie in einem echten Aktenordner.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="feat1-li1">Realistische 3D-Ordner-Optik mit Leder- & Leinen-Textur</li>
+                        <li data-i18n="feat1-li2">Physikbasiertes Seitenumblättern</li>
+                        <li data-i18n="feat1-li3">Vordefinierte Kategorien (Versicherungen, Rechnungen, Finanzen)</li>
+                    </ul>
+                </div>
+                <div class="feature-image-container gsap-slide-left">
+                    <div class="phone-mockup">
+                        <img src="../img/app-dashboard.png" alt="Loculix Dashboard" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Scan -->
+            <div class="feature-row reverse">
+                <div class="feature-text gsap-slide-left">
+                    <h2 data-i18n="feat3-title">Intelligentes Scannen & OCR.</h2>
+                    <p data-i18n="feat3-desc">Verwandle Papier in durchsuchbare digitale Dokumente. Unsere On-Device KI erkennt Kanten, korrigiert die Perspektive und extrahiert Texte.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="feat3-li1">Automatische Randerkennung & Zuschnitt</li>
+                        <li data-i18n="feat3-li2">Perspektivkorrektur für perfekte Ergebnisse</li>
+                        <li data-i18n="feat3-li3">On-Device OCR für höchste Sicherheit</li>
+                    </ul>
+                </div>
+                <div class="feature-image-container gsap-slide-right">
+                    <div class="phone-mockup">
+                        <img src="../img/app-scan.png" alt="Loculix Scan-Interface" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Search -->
+            <div class="feature-row">
+                <div class="feature-text gsap-slide-right">
+                    <h2 data-i18n="feat2-title">Volltext-Suche, die mitdenkt.</h2>
+                    <p data-i18n="feat2-desc">Finde jedes Dokument in Sekundenschnelle. Die Suche durchforstet nicht nur Dateinamen, sondern auch extrahierte Metadaten und den gesamten OCR-Volltext.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="feat2-li1">Suche nach Beträgen, Daten und Vertragsnummern</li>
+                        <li data-i18n="feat2-li2">Fuzzy-Matching für Tippfehler</li>
+                        <li data-i18n="feat2-li3">Blitzschnelle Ergebnisse direkt bei der Eingabe</li>
+                    </ul>
+                </div>
+                <div class="feature-image-container gsap-slide-left">
+                    <div class="mockup-placeholder bg-dark">
+                        <div class="search-bar-mock">
+                            🔍 "KFZ Versicherung"
+                        </div>
+                        <div class="search-results" style="width: 100%; padding: 0 40px;">
+                            <div class="result-item">🚗 KFZ Police 2024</div>
+                            <div class="result-item">🧾 Beitragsrechnung</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section class="security" id="security">
+            <div class="section-container text-center">
+                <h2 class="gsap-fade-up" data-i18n="sec-title">Maximale Sicherheit für deine wichtigsten Daten.</h2>
+                <p class="gsap-fade-up delay-1" data-i18n="sec-desc">Deine Dokumente bleiben bei dir. Wir setzen auf modernste
+                    Verschlüsselung und lokale Verarbeitung.</p>
+
+                <div class="security-grid">
+                    <div class="sec-item gsap-scale-up">
+                        <div class="sec-icon">🔒</div>
+                        <h3 data-i18n="sec1-title">AES-256 Verschlüsselung</h3>
+                        <p data-i18n="sec1-desc">Alle lokalen Daten und PDFs sind streng verschlüsselt.</p>
+                    </div>
+                    <div class="sec-item gsap-scale-up delay-1">
+                        <div class="sec-icon">📱</div>
+                        <h3 data-i18n="sec2-title">Biometrie & PIN</h3>
+                        <p data-i18n="sec2-desc">Schutz durch Face ID, Touch ID oder 6-stellige PIN.</p>
+                    </div>
+                    <div class="sec-item gsap-scale-up delay-2">
+                        <div class="sec-icon">☁️</div>
+                        <h3 data-i18n="sec3-title">Sicherer Sync</h3>
+                        <p data-i18n="sec3-desc">Ende-zu-Ende verschlüsselter Sync über iCloud, Drive oder WebDAV.</p>
+                    </div>
+                    <div class="sec-item gsap-scale-up delay-3">
+                        <div class="sec-icon">🧠</div>
+                        <h3 data-i18n="sec4-title">On-Device KI</h3>
+                        <p data-i18n="sec4-desc">Texterkennung und OCR passieren direkt auf dem Gerät, nicht in der Cloud.</p>
+                    </div>
+                </div>
+                <div class="security-image gsap-fade-up delay-4" style="margin-top: 60px;">
+                    <div class="phone-mockup centered">
+                        <img src="../img/app-lock.png" alt="Loculix Sicherheit – PIN & Biometrie Schutz" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="section-container text-center pricing-box gsap-fade-up">
+                <h2 data-i18n="pricing-title">Einmal zahlen. Für immer deins.</h2>
+                <p class="pricing-subtitle" data-i18n="pricing-desc">Keine versteckten In-App-Käufe. Keine monatlichen Abonnements. Du erwirbst Loculix genau <strong style="color: var(--accent-gold);">einmalig</strong> und die App gehört dir – inklusive aller zukünftigen Updates und neuen Features.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="cta">
+            <div class="cta-box gsap-fade-up">
+                <h2 data-i18n="cta-title">Bereit für den digitalen Schrank?</h2>
+                <p data-i18n="cta-desc">Verbanne das Papierchaos für immer und trage deine wichtigsten Dokumente sicher in der Hosentasche.
+                </p>
+                <form action="https://formsubmit.co/info@loculix.de" method="POST" class="cta-form">
+                    <input type="hidden" name="_subject" value="Neuer Wartelisten-Eintrag für Loculix!">
+                    <input type="hidden" name="_next" value="https://www.loculix.de/danke">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="email" name="email" data-i18n="placeholder-email" placeholder="Deine E-Mail Adresse" class="input-mail" required>
+                    <button type="submit" class="btn btn-gold" data-i18n="cta-btn">Auf die Warteliste</button>
+                </form>
+                <p class="cta-note" data-i18n="cta-note">Demnächst verfügbar für iOS, Android, macOS und Windows.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Loculix</div>
+            <div class="footer-links">
+                <a href="../datenschutz">Datenschutz</a>
+                <a href="../app-datenschutz">App-Datenschutz</a>
+                <a href="../agb">AGB</a>
+                <a href="../nutzungsrichtlinien">Nutzungsrichtlinien</a>
+                <a href="../impressum">Impressum</a>
+                <a href="../kontakt">Kontakt</a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Loculix. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="../i18n.js?v=1.2"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
